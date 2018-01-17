@@ -19,6 +19,18 @@ var routes = Routes{
 		Index,
 	},
 	Route{
+		"EnterGame",
+		"POST",
+		"/Game",
+		EnterGame,
+	},
+	Route{
+		"PlayGame",
+		"POST",
+		"/GamePlay",
+		PlayGame,
+	},
+	/*Route{
 		"TodoIndex",
 		"GET",
 		"/todos",
@@ -29,11 +41,5 @@ var routes = Routes{
 		"GET",
 		"/todos/{todoId}",
 		TodoShow,
-	},
-	Route{
-		"EnterGame",
-		"GET",
-		"/Game",
-		EnterGame,
-	},
+	},*/
 }
