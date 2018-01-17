@@ -31,3 +31,10 @@ func TodoShow(w http.ResponseWriter, r *http.Request) {
 	todoId := vars["todoId"]
 	fmt.Fprintln(w, "Todo show:", todoId)
 }
+
+func EnterGame(w http.ResponseWriter, r *http.Request) {
+	queryValues := r.URL.Query()
+	buCode := queryValues.Get("buCode")
+	id := queryValues.Get("id")
+	fmt.Fprintln(w, "buCode:", buCode, " id:", id)
+}
