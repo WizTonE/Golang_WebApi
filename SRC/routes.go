@@ -19,6 +19,12 @@ var routes = Routes{
 		Index,
 	},
 	Route{
+		"IndexQuery",
+		"GET",
+		"/{id}",
+		IndexQuery,
+	},
+	Route{
 		"EnterGame",
 		"POST",
 		"/Game",
